@@ -7,11 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ena-coder/commit-test.git"
@@ -25,8 +20,9 @@
   "homepage": "https://github.com/Ena-coder/commit-test#readme",
   "dependencies": {
     "@commitlint/cli": "^17.4.4",
-    "@commitlint/config-conventional": "^17.4.4",
-    "@commitlint/prompt-cli": "^17.4.4",
-    "husky": "^8.0.3"
+    "@commitlint/config-conventional": "^17.4.4"
+  },
+  "devDependencies": {
+    "husky": "^6.0.0"
   }
 }
